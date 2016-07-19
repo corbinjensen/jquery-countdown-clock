@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta id="view" name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1">
+		<title>Countdown to Toronto Winter - Corbin Jensen</title>
+		<link rel="stylesheet" type="text/css" href="my_countdown.css">
+		<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.plugin.min.js"></script>
+		<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-80721668-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.my-countdown').countdown({
+					until: $.countdown.UTCDate(
+					-5, 2016, 11, 21, 0, 0	
+						)
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="world-premiere">
+			<div class="heading">
+				<h2>Winter in</h2>
+				<h1>Toronto</h1>
+			</div>
+			<div class="my-countdown"></div>
+		</div>
+	</body>
+</html>
